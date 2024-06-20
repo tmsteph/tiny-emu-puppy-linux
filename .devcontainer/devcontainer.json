@@ -1,0 +1,15 @@
+{
+  "name": "TinyEMU Environment",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "make -C /tinyemu",
+  "forwardPorts": [8000],
+  "extensions": [
+    "ms-azuretools.vscode-docker"
+  ],
+  "remoteUser": "vscode"
+}
